@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrempong Appiah Gyimah - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Obrempong Appiah Gyimah</h1>
+                    <ul class="hero-subtitle-list">
+                        <li>Web Developer</li>
+                        <li>Graphic Designer</li>
+                        <li>Security Enthusiast</li>
+                    </ul>
+                    <p class="hero-description">
+                        Passionate about creating beautiful websites, stunning designs, and exploring the world of cybersecurity.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-pic">
+                        <img src="images/placeholder.jpg" alt="Obrempong Appiah Gyimah" width="120" height="120" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate web developer and graphic designer with a growing interest in cybersecurity. 
+                        I love creating user-friendly websites and visually appealing designs that make a difference.
+                    </p>
+                    <p>
+                        When I'm not coding or designing, you'll find me exploring penetration testing labs and 
+                        learning about web security. I believe in continuous learning and staying up-to-date with 
+                        the latest technologies and security practices.
+                    </p>
+                </div>
+                <div class="skills">
+                    <h3>Skills & Expertise</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Web Development</h4>
+                            <ul>
+                                <li>HTML5 & CSS3</li>
+                                <li>JavaScript (ES6+)</li>
+                                <li>Responsive Design</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Graphic Design</h4>
+                            <ul>
+                                <li>Adobe Photoshop</li>
+                                <li>UI/UX Design</li>
+                                <li>Logo Design</li>
+                                <li>Brand Identity</li>
+                                <li>Digital Art</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Security</h4>
+                            <ul>
+                                <li>Penetration Testing</li>
+                                <li>Web Security</li>
+                                <li>OWASP Top 10</li>
+                                <li>Burp Suite</li>
+                                <li>Security Labs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Web Development Projects -->
+                <div class="project-card" data-category="web" data-id="ecommerce-frontend">
+                    <div class="project-image">
+                        <img src="images/web dev1.png" alt="E-Commerce Website - Frontend" onclick="openImageModal('images/web dev1.png', 'E-Commerce Website - Frontend')" style="cursor: pointer;" width="400" height="250" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Website</h3>
+                        <p>A fully responsive e-commerce platform built with React and Node.js. Features include user authentication, product catalog, and payment integration.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a class="btn btn-small" onclick="openImageModal('images/web dev1.png', 'E-Commerce Website - Frontend')">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web" data-id="ecommerce-backend">
+                    <div class="project-image">
+                        <img src="images/Web dev2.png" alt="E-Commerce Website - Backend" onclick="openImageModal('images/Web dev2.png', 'E-Commerce Website - Backend')" style="cursor: pointer;" width="400" height="250" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Website - Backend</h3>
+                        <p>Backend implementation of the e-commerce platform showcasing API development, database design, and server-side functionality.</p>
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">API</span>
+                        </div>
+                        <div class="project-links">
+                            <a class="btn btn-small" onclick="openImageModal('images/Web dev2.png', 'E-Commerce Website - Backend')">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web" data-id="portfolio">
+                    <div class="project-image">
+                        <img src="images/my portfolio card.png" alt="Portfolio Website" onclick="openImageModal('images/my portfolio card.png', 'Portfolio Website')" style="cursor: pointer;" width="400" height="250" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>A modern, responsive portfolio website showcasing projects and skills. Built with vanilla HTML, CSS, and JavaScript.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a class="btn btn-small" onclick="openImageModal('images/my portfolio card.png', 'Portfolio Website')">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graphic Design Projects -->
+                <div class="project-card" data-category="design" data-id="flyer1">
+                    <div class="project-image">
+                        <img src="images/design.png" alt="Flyer Design 1" onclick="openImageModal('images/design.png', 'Flyer Design 1')" style="cursor: pointer;" width="400" height="250" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Flyer Design 1</h3>
+                        <p>Professional flyer design showcasing creative design skills and effective visual communication. Demonstrates strong design principles and visual hierarchy.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flyer Design</span>
+                            <span class="tag">Print Design</span>
+                            <span class="tag">Visual Communication</span>
+                            <span class="tag">Photoshop</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.figma.com/design/mwkj7CXfhpENirqkVSMBLL/GYIMAH-S-FIT?node-id=0-1&t=rXLNSul0M8I4yEOJ-1" target="_blank" class="btn btn-small">View Design</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design" data-id="flyer2">
+                    <div class="project-image">
+                        <img src="images/design 2.png" alt="Flyer Design 2" onclick="openImageModal('images/design 2.png', 'Flyer Design 2')" style="cursor: pointer;" width="400" height="250" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Flyer Design 2</h3>
+                        <p>Creative flyer design with modern aesthetics and compelling visual elements. Features innovative layout and typography choices.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flyer Design</span>
+                            <span class="tag">Print Design</span>
+                            <span class="tag">Typography</span>
+                            <span class="tag">Photoshop</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.figma.com/design/inCu8JI9eI1KrwBAL1NUcb/Drick?t=rXLNSul0M8I4yEOJ-1" target="_blank" class="btn btn-small">View Design</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design" data-id="flyer3">
+                    <div class="project-image">
+                        <img src="images/design 3.png" alt="Flyer Design 3" onclick="openImageModal('images/design 3.png', 'Flyer Design 3')" style="cursor: pointer;" width="400" height="250" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Flyer Design 3</h3>
+                        <p>Professional flyer design with clean layout and effective messaging. Demonstrates expertise in visual design and brand communication.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flyer Design</span>
+                            <span class="tag">Print Design</span>
+                            <span class="tag">Brand Communication</span>
+                            <span class="tag">Photoshop</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.figma.com/design/mwkj7CXfhpENirqkVSMBLL/GYIMAH-S-FIT?node-id=61-5&t=3uJUnW9hmA9QDUY5-1" target="_blank" class="btn btn-small">View Design</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design" data-id="docspot">
+                    <div class="project-image">
+                        <img src="images/Doc spot.png" alt="Doc Spot Mobile App UI/UX" width="400" height="250" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Doc Spot - Mobile App UI/UX</h3>
+                        <p>A comprehensive doctors appointment system where patients can book appointments with doctors. Features intuitive user interface design with seamless booking experience and modern healthcare app aesthetics.</p>
+                        <div class="project-tags">
+                            <span class="tag">UI/UX Design</span>
+                            <span class="tag">Mobile App</span>
+                            <span class="tag">Healthcare</span>
+                            <span class="tag">Figma</span>
+                        </div>
+                        <div class="project-links">
+                            <a class="btn btn-small" onclick="openImageModal('images/Doc spot.png', 'Doc Spot Mobile App UI/UX')">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Projects -->
+                <div class="project-card" data-category="security" data-id="securitylab">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1519241047957-be31d7379a5d?auto=format&fit=crop&w=600&q=80" alt="Web Security Lab" width="400" height="250" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Web Security Lab</h3>
+                        <p>Web Security Lab is an interactive, hands-on environment where I explore and demonstrate real-world cybersecurity concepts. Through practical challenges and simulations, I test for vulnerabilities like SQL injection, XSS, and CSRF, and learn how to defend against them. This project highlights my commitment to building secure web applications and staying ahead in the ever-evolving world of digital security.</p>
+                        <div class="project-tags">
+                            <span class="tag">Penetration Testing</span>
+                            <span class="tag">OWASP</span>
+                            <span class="tag">Burp Suite</span>
+                        </div>
+                        <div class="project-links">
+                            <a class="btn btn-small" onclick="openImageModal('https://images.unsplash.com/photo-1519241047957-be31d7379a5d?auto=format&fit=crop&w=600&q=80', 'Web Security Lab')">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Project Filter Buttons -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="design">Graphic Design</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Blog & Articles</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" alt="How I Built My Portfolio from Scratch" width="400" height="200" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">July 5, 2025</span>
+                            <span class="blog-category">Web Development</span>
+                        </div>
+                        <h3>How I Built My Portfolio from Scratch</h3>
+                        <p>A behind-the-scenes look at the process, tools, and design decisions that went into creating my personal portfolio website. Learn how I structured the project, made it responsive, and added interactive features.</p>
+                        <a href="#" class="read-more" onclick="openBlogModal()">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:obgyimah1@gmail.com">obgyimah1@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+233598491900">(+233) 598491900</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/obrempong-gyimah-223a6a32a">linkedin.com/in/obrempong-gyimah-223a6a32a</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/Gyimah30">github.com/Gyimah30</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xovwzvdb" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Obrempong Appiah Gyimah</h3>
+                    <ul class="hero-subtitle-list">
+                        <li>Web Developer</li>
+                        <li>Graphic Designer</li>
+                        <li>Security Enthusiast</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/obrempong-gyimah-223a6a32a"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Gyimah30"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/ObGyimah?t=n2mkJ_1viC8tbbDCB2DADg&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTg0MzUyNjcxNjk5NTA1?story_media_id=3669640955564258493_39435017108&igsh=MWxybHVxa3h0Y3phOQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Obrempong Appiah Gyimah. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Blog Modal for Portfolio Build Article -->
+    <div id="blogModal" class="blog-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.85); z-index:9999; align-items:center; justify-content:center;">
+      <div style="background:#fff; max-width:600px; width:90vw; max-height:90vh; overflow-y:auto; border-radius:12px; padding:2rem; position:relative;">
+        <button onclick="closeBlogModal()" style="position:absolute; top:1rem; right:1rem; background:none; border:none; font-size:2rem; color:#2563EB; cursor:pointer;">&times;</button>
+        <h2 style="margin-top:0;">How I Built My Portfolio from Scratch</h2>
+        <p><strong>Published:</strong> July 5, 2025 &nbsp; | &nbsp; <strong>Category:</strong> Web Development</p>
+        <h3>1. Planning & Goal Setting</h3>
+        <p>I started by outlining my goals: showcase my web development, design, and security skills, and make it easy for potential clients or employers to contact me. I sketched a rough layout and listed the sections I wanted: Hero, About, Projects, Blog, and Contact.</p>
+        <h3>2. Design & Inspiration</h3>
+        <p>I chose a clean, modern look with a white background, blue and black accents, and the Inter font for readability. I used Figma to design the layout, focusing on simplicity, clear navigation, and strong visual hierarchy. I also made sure the design would look great on both desktop and mobile devices.</p>
+        <h3>3. Development</h3>
+        <p>I built the site using HTML, CSS, and JavaScript. I structured the HTML semantically, used CSS Grid and Flexbox for layout, and added smooth animations for a polished feel. I implemented project filtering, a functional contact form, and modal image viewing for design work.</p>
+        <h3>4. Making It Responsive</h3>
+        <p>Responsiveness was a top priority. I used media queries to adjust layouts, font sizes, and spacing for tablets and phones. Images and cards scale fluidly, and the navigation switches to a hamburger menu on small screens.</p>
+        <h3>5. Performance & Optimization</h3>
+        <p>I optimized images, enabled lazy loading, and minified CSS/JS for fast load times. I also used <code>font-display: swap</code> for fonts and ensured accessibility best practices.</p>
+        <h3>6. Deployment</h3>
+        <p>Once everything was tested, I deployed the site using GitHub Pages for free, fast hosting. I set up a custom domain and shared the site with my network.</p>
+        <h3>Conclusion</h3>
+        <p>Building my portfolio from scratch was a rewarding experience. It not only showcases my skills but also serves as a living project I can update as I grow. If you have questions or want tips for your own portfolio, feel free to reach out!</p>
+      </div>
+    </div>
+    <script>
+    function openBlogModal() {
+      document.getElementById('blogModal').style.display = 'flex';
+    }
+    function closeBlogModal() {
+      document.getElementById('blogModal').style.display = 'none';
+    }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html> 
